@@ -1,0 +1,31 @@
+print("Days Calculator Programm")
+
+# start date
+
+print("Start Date")
+start_day = int(input("Day (number): "))
+start_month = int(input("Month (number): "))
+start_year = int(input("Year: "))
+
+# final date
+
+print("Final Date")
+end_day = int(input("Day (number): "))
+end_month = int(input("Month (number): "))
+end_year = int(input("Year: "))
+
+# programm
+
+total_days = 0
+
+years = end_year - start_year
+total_days += years * 365
+
+days_start = start_day + (start_month - 1) * 30
+days_end = end_day + (end_month - 1) * 30
+
+
+days = days_end - days_start
+total_days += days
+
+print(f"The total days are: {total_days}")
